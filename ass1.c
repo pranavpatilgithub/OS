@@ -21,11 +21,11 @@ void copyfile(){
 	
 }
 void searchpattern(){
-	pid_t pid = fork();
+
 	char pattern[256];
 	printf("enter pattern to search = ");
 	scanf("%255s",pattern);
-	
+	pid_t pid = fork();
 	if(pid < 0){
 		printf("fork failed");
 	}
@@ -60,16 +60,16 @@ int main(){
     		copyfile();
     		break;
     	case 2:
-			searchpattern();
-			break;
-		case 3:
-			printf("The child id = %d",getpid());
-			break;
-		case 4:
-			printf("= = exiting = =");
-			break;
-		default:
-			printf("enter valid number\n");		
+		searchpattern();
+		break;
+	case 3:
+		printf("The child id = %d",getpid());
+		break;
+	case 4:
+		printf("= = exiting = =");
+		break;
+	default:
+		printf("enter valid number\n");		
 	}
 	return 0;
 	
