@@ -132,3 +132,35 @@ int main() {
     lru(string, n, frame);
     return 0;
 }
+
+// /tmp/IAnqyxyoF6.o
+// enter number of pages = 7
+// enter incoming stream = 
+// 1
+// 3
+// 0
+// 3
+// 5
+// 6
+// 3
+// enter no of frames = 3
+
+// string 	status 	 frame-1 	 frame-2 	 frame-3 
+// 1 	miss 	1 	-- 	-- 	
+// 3 	miss 	1 	3 	-- 	
+// 0 	miss 	1 	3 	0 	
+// 3 	hit 	1 	3 	0 	
+// 5 	miss 	1 	5 	0 	
+// 6 	miss 	1 	5 	6 	
+// 3 	miss 	3 	5 	6 	
+// fault = 6
+// string 	 status 	 frame1 	 frame2 	frame3
+// 1 	miss 	1 		
+// 3 	miss 	1 		3 		
+// 0 	miss 	1 		3 		0 		
+// 3 	hit 	1 		3 		0 		
+// 5 	miss 	5 		3 		0 		
+// 6 	miss 	5 		3 		6 		
+// 3 	hit 	5 		3 		6 		
+
+// fault = 5
