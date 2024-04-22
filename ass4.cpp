@@ -52,3 +52,17 @@ int main(){
 	
 	return 0;
 }
+
+//gcc ass4.cpp -lstdc++
+
+// enter number of readers = 2
+// 1 reader is inside
+// writer is trying to enter
+// 2 reader is inside
+// writer is trying to enter
+// 2 reader is leaving
+// 1 reader is leaving
+// writer has entered
+// writer is leaving
+// writer has entered
+// writer is leaving
