@@ -60,3 +60,25 @@ int main(){
 	
 	return 0;
 }
+
+// /tmp/IBcrRIr4G1.o
+// enter number of message = 2
+// In parent :: enter the message 1 = hi
+// In parent :: writing message = hi
+// In child :: reading message from parent = hi
+
+// In child :: enter message = hello
+// In child :: writing message = hello
+// In parent :: reading child's message = hello
+ 
+// In parent :: enter the message 2 = bye
+// In parent :: writing message = bye
+// In child :: reading message from parent = bye
+
+// In child :: enter message = bye
+// In child :: writing message = bye
+// In parent :: reading child's message = bye
+ 
+
+
+// === Code Execution Successful ===
